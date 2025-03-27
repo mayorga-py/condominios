@@ -20,7 +20,7 @@ class LoginController extends Controller
             'password' => 'required'
         ]);
     
-        $fixedUsername = 'admin';
+        $fixedUsername = 'casa18';
         $fixedPassword = '12345';
     
         if ($request->username === $fixedUsername && $request->password === $fixedPassword) {

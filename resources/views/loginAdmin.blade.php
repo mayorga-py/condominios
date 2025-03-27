@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Club Diamante</title>
+    <title>Login - Administrador - Club Diamante</title>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -118,23 +118,14 @@
         <h1>Club Diamante</h1>
     </div>
     <div class="container">
-        <h2>Bienvenido Residente</h2>
-        <form action="{{ route('login') }}" method="POST">
+        <h2>Bienvenido Administrador</h2>
+        <form action="{{ route('AdminComunicados') }}" method="GET">
             @csrf
             <input type="text" name="username" placeholder="Usuario" required>
             <input type="password" name="password" placeholder="Contraseña" required>
             <p><a href="#">¿Olvidaste tu contraseña?</a></p>
             <button type="submit">Acceder</button>
         </form>
-        <a href="{{ route('loginAdmin') }}"><button class="admin-button">Administrador</button></a>
+        <a href="{{ route('login') }}"><button class="admin-button">Residente</button></a>
     </div>
-    <div class="footer">
-        <div class="social-icons">
-            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="twitter-icon.jpg" alt="Twitter"></a>
-            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-        </div>
-        <p>Contactos: (+52) 442 456 7890 | club.diamante@gmail.com</p>
-    </div>
-</body>
-</html>
+    <div
